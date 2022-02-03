@@ -1,0 +1,12 @@
+development: 
+  cloud_name: "dlrgphnrb"
+  api_key: "472414277554997"
+  api_secret: "HK-is1Mw4uAbl2qMIO1NI23vpfA"
+  secure: true
+  cdn_subdomain: true
+production:
+  cloud_name: "dlrgphnrb"
+  api_key: "472414277554997"
+  api_secret: "HK-is1Mw4uAbl2qMIO1NI23vpfA"
+  secure: true
+  cdn_subdomain: true
