@@ -4,14 +4,21 @@ class UsersController < ApplicationController
   end
   def usercreate
    @user=User.new(user_param)
-   if @user.save
+   
+
+   if @user.valid?&&@user.save
     redirect_to login_path 
-   else 
+   else
+    a=[]
+    @user.errors.messages.each do |key, value|
+      a.push("#{key} error: #{value[0]}");
+    end
+    flash.now[:danger]=a
     render :new
    end
   end   
    private
    def user_param
-    params.require(:user).permit(:name,:email,:password)
+    params.require(:user).permit(:name,:email,:password,:password_confirmation)
    end
 end   
