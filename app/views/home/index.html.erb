@@ -8,7 +8,7 @@
         <div class="flex justify-end items-center  mb-4">
             <div>
             <%= render 'shared/input/buttons/secondary', color: "purple", label: "Edit", href: edit_url %>
-        <a id="share-btn" onclick="n()" data-turbolinks="true" class="py-2 px-4 border-2 border-purple-600 text-purple-600 hover:border-purple-700 hover:text-purple-700 text-center text-base font-semibold shadow-md hover:shadow-none focus:outline-none rounded-lg" href="<%= "http://127.0.0.1:3000/show/"+@user.profile.id.to_s %>">Copy link</a>
+        <a id="share-btn" onclick="n()" data-turbolinks="true" class="py-2 px-4 border-2 border-purple-600 text-purple-600 hover:border-purple-700 hover:text-purple-700 text-center text-base font-semibold shadow-md hover:shadow-none focus:outline-none rounded-lg" href="<%= "https://flexiple-submission.herokuapp.com/show/"+@user.profile.id.to_s %>">Copy link</a>
 
         </div>
         </div>
